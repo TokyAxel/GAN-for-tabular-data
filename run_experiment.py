@@ -93,7 +93,8 @@ def execute_experiment(dataset_name, encoders_list, validation_type, sample_type
                 "avg_tress_number": avg_num_trees,
                 "train_prop_size": train_prop_size,
             }
-            save_exp_to_file(dic=results, path="./results/fit_predict_scores.txt")
+            #save_exp_to_file(dic=results, path="./results/fit_predict_scores.txt")
+            save_exp_to_file(dic=results, path="./results/telecom_fit_predict_scores.txt")
 
 
 if __name__ == "__main__":
@@ -102,12 +103,12 @@ if __name__ == "__main__":
 
     dataset_list = [
         "telecom",
-        "adult",
-        "employee",
-        "mortgages",
-        "poverty_A",
-        "credit",
-        "taxi",
+        #"adult",
+        #"employee",
+        #"mortgages",
+        #"poverty_A",
+        #"credit",
+        #"taxi",
     ]  # "kick","kdd_upselling"
 
     for dataset_name in tqdm(dataset_list):
